@@ -1,2 +1,2 @@
-# SND_Workshop
+# SND Workshop
 Advanced HTML &amp; CSS
