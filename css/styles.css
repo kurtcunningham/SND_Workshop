@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Website Styles
+   ========================================================================== */
+
+/**
+* Theme Index
+*
+* Brand Theme Colors
+* 1. Blue Base:     #0B162A
+* 2. Organe Base:   #FA4616
+*
+* Structure Theme Colors
+* 1. Black Base:    #000000;
+* 2. Gray Light:    #FAFAFA
+* 3. Gray Base:     #CDCDCD
+* 4. White Base:    #FFFFFF
+*
+* Typography Theme Colors
+* 1. Black Base:    #2A2A2A
+* 2. Blue Base:     #0B162A
+* 3. Organe Base:   #FA4616
+*/
+
+
+/* ==========================================================================
+   Global layout
+   ========================================================================== */
+
+html,
+body {
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+}
