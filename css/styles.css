@@ -616,7 +616,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .page-related-content ul {
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 32px;
@@ -631,8 +631,8 @@ body {
    margin-bottom: 32px;
 }
 
-@media(min-width: 600px) {
-  .page-related-content li {
+@media(min-width: 769px) {
+  .page-related-content li:not(:last-child) {
     margin-bottom: 0
   }
 }
