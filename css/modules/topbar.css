@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Topbar Module Styles
+   ========================================================================== */
+
+.topbar {
+  height: 64px;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.topbar nav {
+  display: flex;
+}
+
+.topbar .logo-container {
+  padding: 16px 24px;
+  position: relative;
+  transform: skewX(-10deg);
+}
+
+.topbar .logo-container::before {
+  content: " ";
+  height: 100%;
+  left: -12px;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
+.topbar .logo-container,
+.topbar .logo-container::before {
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+
+.topbar .logo-container a {
+  display: inline-block;
+  transform: skewX(10deg);
+}
+
+.topbar .logo-container img {
+  height: 100%;
+  width: 65px;
+}
+
+.topbar .share-container,
+.topbar .share-container::after {
+  background-color: #FFFFFF;
+  display: inline-block;
+}
+
+.topbar .share-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 16px 24px;
+  position: relative;
+  transform: skewX(-10deg);
+}
+
+.topbar .share-container::after {
+  content: " ";
+  height: 100%;
+  right: -12px;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+
+.topbar .share-container li {
+  display: inline-block;
+  transform: skewX(10deg);
+}
+
+.topbar .share-container li:not(:last-child) {
+  margin-right: 8px;
+}

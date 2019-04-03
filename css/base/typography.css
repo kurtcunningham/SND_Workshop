@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Typography Base Styles
+   ========================================================================== */
+
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #FA4616;
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-weight: 900;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+/* Paragraph Styles */
+p {
+  font-family: 'Georgia', Times, serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+/* Links */
+a {
+  color: #FA4616;
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Image Caption */
+figcaption {
+  border-bottom: 1px solid #CDCDCD;
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-bottom: 16px;
+}
+
+figcaption span {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}

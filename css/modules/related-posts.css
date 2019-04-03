@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Related Posts Module Styles
+   ========================================================================== */
+
+.page-related-content {
+  background-color: #FAFAFA;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 64px 16px;
+}
+
+.page-related-content ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media(min-width: 769px) {
+  .page-related-content ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 32px;
+  }
+}
+
+.page-related-content li {
+   grid-column: span 4;
+}
+
+.page-related-content li:not(:last-child) {
+   margin-bottom: 32px;
+}
+
+@media(min-width: 769px) {
+  .page-related-content li:not(:last-child) {
+    margin-bottom: 0
+  }
+}
+
+.page-related-content li img {
+  border-radius: 3px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.page-related-content li h4,
+.page-related-content li p {
+  color: #2A2A2A;
+  text-decoration: none;
+}
+
+.page-related-content li h4 {
+  margin-bottom: 4px;
+}
+
+.page-related-content li p {
+  font-weight: 400;
+}

@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Header Page Styles
+   ========================================================================== */
+
+.page-header {
+  background-color: #FAFAFA;
+  height: 600px;
+  padding-top: 64px;
+  overflow: hidden;
+  position: relative;
+  top: -64px; /* Same height as topbar */
+  z-index: 0;
+}
+
+/* Medium Viewport Breakpoint */
+@media(min-width: 769px) {
+  .page-header {
+    height: 800px;
+  }
+}
+
+.page-header .container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+/* Medium Viewport Breakpoint */
+@media(min-width: 769px) {
+  .page-header .container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 32px;
+  }
+}
+
+.page-header .content-container {
+  grid-column: span 4;
+  padding: 0 16px;
+}
+
+/* Medium Viewport Breakpoint */
+@media(min-width: 769px) {
+  .page-header .content-container {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    padding: 0;
+  }
+}
+
+.page-header .content-container .label {
+  background-color: #0B162A;
+  display: inline-block;
+  margin-bottom: 24px;
+  padding: 8px;
+  transform: skewX(-10deg);
+}
+
+.page-header .content-container .label p {
+  color: #FAFAFA;
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 0;
+  transform: skewX(10deg);
+}
+
+.page-header .content-container h1 {
+  color: #FA4616;
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 65px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+/* Medium Viewport Breakpoint */
+@media(min-width: 769px) {
+  .page-header .content-container h1 {
+    font-size: 150px;
+    line-height: 110px;
+  }
+}
+
+.page-header .content-container p {
+  font-family: 'Georgia', Times, serif;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.page-header .image-container {
+  background: url('../../images/article/hero-img-min.jpg') no-repeat 0 64px;
+  background-size: cover;
+  display: none;
+  grid-column-start: 8;
+  grid-column-end: 12;
+  height: 100%;
+  left: -64px;
+  position: relative;
+  width: 850px;
+  z-index: -1;
+}
+
+/* Medium Viewport Breakpoint */
+@media(min-width: 769px) {
+  .page-header .image-container  {
+    display: block;
+  }
+}
