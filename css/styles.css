@@ -609,7 +609,7 @@ body {
   padding: 64px 16px;
 }
 
-page-related-content-container {
+.page-related-content-container {
   margin: 0 auto;
   max-width: 1440px;
 }
