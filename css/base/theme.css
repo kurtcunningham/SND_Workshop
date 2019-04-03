@@ -43,15 +43,6 @@
   --border-radius-fl:         100%;
 
 
-  /* Grid
-    ========================================================================== */
-
-  /* Media Queries */
-  --md-viewport:              min-width: 768px;
-  --lg-viewport:              min-width: 1024px;
-  --xlg-viewport:             min-width: 1260px;
-
-
   /* Typography
     ========================================================================== */
 

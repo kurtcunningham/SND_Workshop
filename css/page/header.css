@@ -5,18 +5,17 @@
 .page-header {
   background-color: var(--structure-gray-light);
   height: 600px;
-  margin: 0 0 32px;
-  padding: 64px 0 0;
+  margin: var(--spacer-0) var(--spacer-0) var(--spacer-32);
   overflow: hidden;
   position: relative;
   z-index: 0;
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header {
     height: 800px;
-    margin: 0 0 128px;
+    margin: var(--spacer-0) var(--spacer-0) var(--spacer-128);
   }
 }
 
@@ -27,47 +26,45 @@
 
 .page-header .content-container {
   grid-column: span 4;
-  padding: 0 16px;
+  padding: var(--spacer-0) var(--spacer-16);
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header .content-container {
     grid-column-start: 2;
     grid-column-end: 7;
-    padding: 0;
+    padding: var(--spacer-0);
   }
 }
 
 .page-header .content-container .label {
-  background-color: #0B162A;
+  background-color: var(--brand-blue-base);
   display: inline-block;
-  margin-bottom: 24px;
-  padding: 8px;
+  margin-bottom: var(--spacer-24);
+  padding: var(--spacer-8);
   transform: skewX(-10deg);
 }
 
 .page-header .content-container .label p {
-  color: #FAFAFA;
-  font-family: 'Work Sans', Helvetica, sans-serif;
+  color: var(--structure-gray-light);
+  font-family: var(--font-family-sans-serif);
   font-size: 50px;
-  font-weight: 900;
-  margin-bottom: 0;
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacer-0);
   transform: skewX(10deg);
 }
 
 .page-header .content-container h1 {
-  color: #FA4616;
-  font-family: 'Work Sans', Helvetica, sans-serif;
+  color: var(--brand-orange-base);
   font-size: 80px;
-  font-weight: 900;
   line-height: 65px;
-  margin-bottom: 24px;
+  margin-bottom: var(--spacer-24);
   text-transform: uppercase;
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header .content-container h1 {
     font-size: 150px;
     line-height: 110px;
@@ -75,9 +72,8 @@
 }
 
 .page-header .content-container p {
-  font-family: 'Georgia', Times, serif;
-  font-size: 24px;
-  line-height: 1.5;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-delta);
 }
 
 .page-header .image-container {
@@ -94,7 +90,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-header .image-container  {
     display: block;
   }

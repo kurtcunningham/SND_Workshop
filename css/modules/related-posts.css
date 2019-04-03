@@ -18,7 +18,7 @@
    margin-bottom: var(--spacer-32);
 }
 
-@media(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .page-related-content .item:not(:last-child) {
     margin-bottom: var(--spacer-0);
   }
