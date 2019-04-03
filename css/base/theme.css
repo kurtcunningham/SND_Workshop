@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Theme Variables Styles
+   ========================================================================== */
+
+:root {
+
+  /* ==========================================================================
+   Global Variables
+   ========================================================================== */
+
+  /* Colors
+    ========================================================================== */
+
+  /* Brand Colors */
+  --brand-blue-base:          #0B162A;
+  --brand-orange-base:        #FA4616;
+
+  /* Structure Colors */
+  --structure-black-base:      #000000;
+  --structure-gray-light:      #FAFAFA;
+  --structure-gray-base:       #CDCDCD;
+  --structure-white-base:      #FFFFFF;
+
+  /* Typography Colors */
+  --type-black-base:          #2A2A2A;
+  --type-blue-base:           var(--brand-blue-base);
+  --type-gray-base:           #959595;
+  --type-orange-base:         var(--brand-orange-base);
+  --type-white-base:          var(--structure-white-base);
+
+
+  /* Borders
+    ========================================================================== */
+
+  /* Border Styles */
+  --border-primary:           1px solid var(--structure-gray-base);
+
+  --border-card:              8px solid var(--brand-orange-base);
+  --border-card-list:         8px solid var(--structure-white-base);
+
+  /* Border Radius */
+  --border-radius-3:          3px;
+  --border-radius-fl:         100%;
+
+
+  /* Grid
+    ========================================================================== */
+
+  /* Media Queries */
+  --md-viewport:              min-width: 768px;
+  --lg-viewport:              min-width: 1024px;
+  --xlg-viewport:             min-width: 1260px;
+
+
+  /* Typography
+    ========================================================================== */
+
+  /* Font Family */
+  --font-family-sans-serif:   'Work Sans', Helvetica, sans-serif;
+  --font-family-serif:        'Georgia', Times, serif;
+
+  /* Font Weight */
+  --font-weight-regular:      400;
+  --font-weight-bold:         700;
+  --font-weight-black:        900;
+
+  /* Font Sizes */
+  --font-size-base:           16px;
+
+  --font-size-alpha:          56px;
+  --font-size-bravo:          48px;
+  --font-size-charlie:        32px;
+  --font-size-delta:          24px;
+  --font-size-echo:           18px;
+  --font-size-foxtrot:        var(--font-size-base);
+  --font-size-golf:           14px;
+  --font-size-hotel:          12px;
+
+  /* Line Height Styles */
+  --line-height-primary:      1.5;
+  --line-height-secondary:    1.25;
+
+  /* Text Alignment */
+  --text-align-center:        center;
+  --text-align-left:          left;
+  --text-align-right:         right;
+
+
+  /* Spacers
+    ========================================================================== */
+
+  /* Core Spacer */
+  --spacer-base:              8px;
+
+  /* Spacers Styles */
+  --spacer-0:                 0;
+  --spacer-4:                 4px;
+  --spacer-8:                 8px;
+  --spacer-12:                12px;
+  --spacer-16:                16px;
+  --spacer-24:                24px;
+  --spacer-32:                32px;
+  --spacer-64:                64px;
+  --spacer-128:               128px;
+
+  /* Spacer Styles Alternative */
+  /*
+  --spacer-xsm:               calc(var(--spacer-base) / 4);
+  --spacer-sm:                calc(var(--spacer-base) / 2);
+  --spacer-md:                var(--spacer-base);
+  --spacer-lg:                calc(var(--spacer-base) * 2);
+  --spacer-xlg:               calc(var(--spacer-base) * 3);
+  --spacer-xlg:               calc(var(--spacer-base) * 4);
+  --spacer-xxlg:              calc(var(--spacer-base) * 8);
+  --spacer-xxxlg:             calc(var(--spacer-base) * 16);
+  */
+
+
+  /* ==========================================================================
+   Component Variables
+   ========================================================================== */
+
+  /* Avatar
+  ========================================================================== */
+
+  /* Avatar Sizes */
+  --avatar-sm:                32px;
+  --avatar-md:                48px;
+  --avatar-lg:                64px;
+
+
+  /* Buttons
+  ========================================================================== */
+
+  /* Core Button */
+  --button-border:            none;
+  --button-border-radius:     var(--border-radius-3);
+  --button-color:             var(--type-white-base);
+  --button-font-family:       var(--font-family-sans-serif);
+  --button-font-size:         var(--font-size-base);
+  --button-font-weight:       var(--font-weight-black);
+  --button-padding-vert:      var(--spacer-16);
+  --button-padding-horz:      var(--spacer-24);
+  --button-transition:        opacity 0.35s ease-in-out;
+  --button-width:             auto;
+
+  /* Hover Button */
+  --button-hover-opacity:     0.75;
+
+  /* Button Styles */
+  --button-primary-bg:        var(--brand-orange-base);
+  --button-secondary-bg:      var(--brand-blue-base);
+
+
+  /* Cards
+  ========================================================================== */
+
+  /* Core Card */
+  --card-bg:                  var(--structure-gray-light);
+  --card-border:              var(--border-card);
+  --card-margin:              var(--spacer-32);
+  --card-padding:             var(--spacer-16);
+
+}

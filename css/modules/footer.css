@@ -2,15 +2,15 @@
  ========================================================================== */
 
  footer {
-   background-color: #000000;
-   padding: 32px 16px;
+   background-color: var(--structure-black-base);
+   padding: var(--spacer-32) var(--spacer-16);
+   text-align: var(--text-align-center);
  }
 
  footer p {
-   color: #FFFFFF;
-   font-family: 'Work Sans', Helvetica, sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   text-align: center;
-   margin-bottom: 0;
+   color: var(--type-white-base);
+   font-family: var(--font-family-sans-serif);
+   font-size: var(--font-size-foxtrot);
+   font-weight: var(--font-weight-400);
+   margin-bottom: var(--spacer-0);
  }

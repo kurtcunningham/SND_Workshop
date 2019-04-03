@@ -6,8 +6,8 @@
  ========================================================================== */
 
 .page-related-content {
-  background-color: #FAFAFA;
-  padding: 64px 16px;
+  background-color: var(--structure-gray-light);
+  padding: var(--spacer-64) var(--spacer-16);
 }
 
 .page-related-content .item {
@@ -15,11 +15,11 @@
 }
 
 .page-related-content .item:not(:last-child) {
-   margin-bottom: 32px;
+   margin-bottom: var(--spacer-32);
 }
 
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-related-content .item:not(:last-child) {
-    margin-bottom: 0
+    margin-bottom: var(--spacer-0);
   }
 }

@@ -6,11 +6,11 @@
    ========================================================================== */
 
 .sidebar-byline-container {
-  text-align: center;
+  text-align: var(--text-align-center);
 }
 
 .sidebar-byline-container::after {
-  background-color: #FAFAFA;
+  background-color: var(--structure-gray-light);
   content: "";
   display: block;
   height: 50px;

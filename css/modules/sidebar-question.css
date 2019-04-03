@@ -6,30 +6,31 @@
    ========================================================================== */
 
 .sidebar-question-item {
-  border-top: 8px solid #FFFFFF;
+  border-top: var(--border-card-list);
   display: grid;
   grid-template-columns: 48px auto;
   grid-column-gap: 16px;
-  padding: 16px 0;
+  padding: var(--spacer-16) var(--spacer-0);
 }
 
 .sidebar-question-item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+  margin-bottom: var(--spacer-0);
+  padding-bottom: var(--spacer-0);
+}
+
+.sidebar-question-item .title,
+.sidebar-question-item .text {
+  font-size: var(--font-size-golf);
 }
 
 .sidebar-question-item .title {
-  color: #2A2A2A;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 2px;
+  color: var(--type-black-base);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacer-4);
 }
 
 .sidebar-question-item .text {
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 0;
+  font-family: var(--font-family-sans-serif);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: var(--spacer-0);
 }

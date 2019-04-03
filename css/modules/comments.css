@@ -11,7 +11,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-comments-container {
     grid-column-start: 2;
     grid-column-end: 8;
@@ -21,38 +21,39 @@
 
 /* List */
 .comments-list {
-  margin-bottom: 64px;
+  margin-bottom: var(--spacer-64);
 }
 
 /* Item */
 .comment-item:not(:last-child) {
-  border-bottom: 1px solid #CDCDCD;
-  margin: 0 0 24px;
-  padding: 0 0 8px;
+  border-bottom: var(--border-primary);
+  margin: var(--spacer-0) var(--spacer-0) var(--spacer-24);
+  padding: var(--spacer-0) var(--spacer-0) var(--spacer-8);
 }
 
 .comment-item-name {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 8px;
+  margin-bottom: var(--spacer-8);
+}
+
+.comment-item-name .title,
+.comment-item-name .date {
+  font-family: var(--font-family-sans-serif);
 }
 
 .comment-item-name .title {
-  color: #2A2A2A;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin-bottom: 0;
+  color: var(--type-black-base);
+  font-size: var(--font-size-foxtrot);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacer-0);
 }
 
 .comment-item-name .date {
-  color: #959595;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: right;
+  color: var(--type-gray-base);
+  font-size: var(--font-size-hotel);
+  font-weight: var(--font-weight-regular);
+  text-align: var(--text-align-right);
 }
 
 
@@ -60,10 +61,10 @@
  ========================================================================== */
 
 .comments-form {
-  background-color: #0B162A;
-  border-radius: 3px;
-  margin-bottom: 64px;
-  padding: 32px 32px 16px;
+  background-color: var(--brand-blue-base);
+  border-radius: var(--border-radius-3);
+  margin-bottom: var(--spacer-64);
+  padding: var(--spacer-32) var(--spacer-32) var(--spacer-16);
 }
 
 .comments-form-container {
@@ -73,5 +74,5 @@
 }
 
 .comments-form-action {
-  text-align: right;
+  text-align: var(--text-align-right);
 }

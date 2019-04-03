@@ -10,35 +10,35 @@ h3,
 h4,
 h5,
 h6 {
-  color: #FA4616;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-weight: 900;
-  line-height: 1.5;
-  margin-bottom: 16px;
+  color: var(--type-orange-base);
+  font-family: var(--font-family-sans-serif);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-primary);
+  margin-bottom: var(--spacer-16);
 }
 
 h1 {
-  font-size: 56px;
+  font-size: var(--font-size-alpha);
 }
 
 h2 {
-  font-size: 48px;
+  font-size: var(--font-size-bravo);
 }
 
 h3 {
-  font-size: 32px;
+  font-size: var(--font-size-charlie);
 }
 
 h4 {
-  font-size: 24px;
+  font-size: var(--font-size-delta);
 }
 
 h5 {
-  font-size: 16px;
+  font-size: var(--font-size-echo);
 }
 
 h6 {
-  font-size: 14px;
+  font-size: var(--font-size-golf);
 }
 
 
@@ -46,10 +46,10 @@ h6 {
  ========================================================================== */
 
 p {
-  font-family: 'Georgia', Times, serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 16px;
+  font-family: var(--font-family-serif);
+  font-size: var(--font-size-foxtrot);
+  line-height: var(--line-height-primary);
+  margin-bottom: var(--spacer-16);
 }
 
 
@@ -57,10 +57,10 @@ p {
  ========================================================================== */
 
 a {
-  color: #FA4616;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
+  color: var(--type-orange-base);
+  font-family: var(--font-family-sans-serif);
+  font-size: inherit;
+  font-weight: var(--font-weight-bold);
   text-decoration: none;
 }
 
@@ -69,15 +69,15 @@ a {
  ========================================================================== */
 
 .text-blue {
- color: #0B162A;
+ color: var(--type-blue-base);
 }
 
 .text-orange {
- color: #FA4616;
+ color: var(--type-orange-base);
 }
 
 .text-white {
- color: #FFFFFF;
+ color: var(--type-white-base);
 }
 
 
@@ -86,10 +86,10 @@ a {
 
 /* Text Center */
 .text-center {
-  text-align: center;
+  text-align: var(--text-align-center);
 }
 
 /* Text Right */
 .text-right {
-  text-align: right;
+  text-align: var(--text-align-right);
 }

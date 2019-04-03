@@ -6,7 +6,7 @@
    ========================================================================== */
 
 .avatar {
-  border-radius: 100%;
+  border-radius: var(--border-radius-fl);
   overflow: hidden;
 }
 
@@ -17,8 +17,17 @@
 
 /* Sizes
   ========================================================================== */
+.avatar-sm {
+  height: var(--avatar-sm);
+  width: var(--avatar-sm);
+}
 
 .avatar-md {
-  height: 48px;
-  width: 48px;
+  height: var(--avatar-md);
+  width: var(--avatar-md);
+}
+
+.avatar-lg {
+  height: var(--avatar-lg);
+  width: var(--avatar-lg);
 }

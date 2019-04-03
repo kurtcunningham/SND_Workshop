@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .topbar {
-  background-color: #FAFAFA;
+  background-color: var(--structure-gray-light);
   height: 64px;
   overflow: hidden;
   position: relative;
@@ -31,7 +31,7 @@
 
 .topbar .topbar-left,
 .topbar .topbar-left::before {
-  background-color: #FFFFFF;
+  background-color: var(--structure-white-base);
   display: inline-block;
 }
 
@@ -47,7 +47,7 @@
 
 .topbar .topbar-right,
 .topbar .topbar-right::after {
-  background-color: #FFFFFF;
+  background-color: var(--structure-white-base);
   display: inline-block;
 }
 

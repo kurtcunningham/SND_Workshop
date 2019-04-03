@@ -8,28 +8,27 @@
 /* Card Post Type Styles */
 .card-post .title,
 .card-post .text {
-  color: #2A2A2A;
+  color: var(--type-black-base);
 }
 
 .card-post .title {
-  color: #2A2A2A;
-  margin-bottom: 4px;
+  margin-bottom: var(--spacer-4);
 }
 
 .card-post .text {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 /* Card Post Image */
 .card-post-img-container {
   height: 275px;
-  margin-bottom: 16px;
+  margin-bottom: var(--spacer-16);
   overflow: hidden;
   width: 100%;
 }
 
 .card-post .img {
-  border-radius: 3px;
+  border-radius: var(--border-radius-3);
   height: 100%;
   object-fit: cover;
   width: 100%;

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .page-header {
-  background-color: #FAFAFA;
+  background-color: var(--structure-gray-light);
   height: 600px;
   margin: 0 0 32px;
   padding: 64px 0 0;
@@ -13,7 +13,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-header {
     height: 800px;
     margin: 0 0 128px;
@@ -31,7 +31,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-header .content-container {
     grid-column-start: 2;
     grid-column-end: 7;
@@ -67,7 +67,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-header .content-container h1 {
     font-size: 150px;
     line-height: 110px;
@@ -94,7 +94,7 @@
 }
 
 /* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
+@media(min-width: 768px) {
   .page-header .image-container  {
     display: block;
   }
