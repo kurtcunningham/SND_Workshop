@@ -19,20 +19,20 @@
   <body>
     <header class="topbar" aria-label="site navigation">
       <nav>
-        <div class="logo-container" aria-label="Navigate to homepage">
-          <a href="https://www.madebymunsters.com">
+        <div class="topbar-left" aria-label="Navigate to homepage">
+          <a href="https://www.madebymunsters.com" class="topbar-logo-link">
             <img src="images/logo/logo.svg" alt="Made by Munsters" />
           </a>
         </div>
-        <div class="share-container">
-          <ul>
-            <li>
-              <a href="https://facebook.com/madebymunsters" target="_blank">
+        <div class="topbar-right">
+          <ul class="topbar-social-list">
+            <li class="topbar-social-item">
+              <a href="https://facebook.com/madebymunsters" target="_blank" class="topbar-social-link">
                 <img src="images/icons/icon-facebook.svg" alt="Visit our Facebook page">
               </a>
             </li>
-            <li>
-              <a href="https://twitter.com/madebymunsters" target="_blank">
+            <li class="topbar-social-item">
+              <a href="https://twitter.com/madebymunsters" target="_blank" class="topbar-social-link">
                 <img src="images/icons/icon-twitter.svg" alt="Visit our Twitter page">
               </a>
             </li>
@@ -52,16 +52,16 @@
         <div class="image-container" aria-label="Chicago Bears featured players"></div>
       </div>
     </section>
-    <main class="page-content">
+    <main class="container page-content">
       <article class="article">
-        <h3>Expectations on the rise</h3>
+        <h3 class="subhead">Expectations on the rise</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <figure class="image-container">
+        <figure class="article-image-container">
           <img src="images/article/article-img-1-min.jpg" alt="leonard floyd celebrates" />
           <figcaption>
             <span>Photo by Firsty Lastly</span>
@@ -72,7 +72,7 @@
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <h3>Offense up to the challenge</h3>
+        <h3 class="subhead">Offense up to the challenge</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -81,45 +81,45 @@
       </article>
       <aside class="sidebar">
         <div class="sidebar-wrapper">
-          <div class="byline-box">
-            <div class="byline-img-container">
+          <div class="sidebar-byline">
+            <div class="sidebar-byline-container">
               <img src="images/article/mugshot-min.png" alt="author mugshot" />
             </div>
-            <div class="byline-text-container">
-              <h5>Kurt Cunningham</h5>
-              <p><small>kurt.cunningham@madebymunsters.com</small></p>
-              <p><small>Staff writer</small></p>
+            <div class="card byline-text-container">
+              <h5 class="card-title">Kurt Cunningham</h5>
+              <p class="card-text-small"><small>kurt.cunningham@madebymunsters.com</small></p>
+              <p class="card-text-small"><small>Staff writer</small></p>
             </div>
           </div>
-          <div class="selection-box">
-            <h5>Our Picks Are In</h5>
-            <p>Will the Bears make this years Super Bowl? Or miss out, again?</p>
+          <div class="card sidebar-question">
+            <h5 class="card-title">Our Picks Are In</h5>
+            <p class="card-text">Will the Bears make this years Super Bowl? Or miss out, again?</p>
             <ul>
-              <li class="item">
-                <div class="item-img-container">
-                  <img src="images/article/mugshot-kurt-min.jpg" alt="Writer Kurt Cunningham" />
+              <li class="sidebar-question-item">
+                <div class="avatar avatar-md">
+                  <img src="images/article/mugshot-kurt-min.jpg" alt="Writer Kurt Cunningham" class="avatar-img" />
                 </div>
-                <div class="item-text-container">
-                  <h6>Kurt Cunningham</h6>
-                  <p>Is this a serious question? Clearly the answer is <strong>yes!</strong></p>
-                </div>
-              </li>
-              <li class="item">
-                <div class="item-img-container">
-                  <img src="images/article/mugshot-joey-min.jpg" alt="Writer Kurt Cunningham" />
-                </div>
-                <div class="item-text-container">
-                  <h6>Joey Kirk</h6>
-                  <p>Hmmm ... I want to believe, but <strong>no</strong> they won't make it.</p>
+                <div class="content">
+                  <h6 class="title">Kurt Cunningham</h6>
+                  <p class="text">Is this a serious question? Clearly the answer is <strong>yes!</strong></p>
                 </div>
               </li>
-              <li class="item">
-                <div class="item-img-container">
-                  <img src="images/article/mugshot-clay-min.jpg" alt="Writer Kurt Cunningham" />
+              <li class="sidebar-question-item">
+                <div class="avatar avatar-md">
+                  <img src="images/article/mugshot-joey-min.jpg" alt="Writer Kurt Cunningham" class="avatar-img" />
                 </div>
-                <div class="item-text-container">
-                  <h6>Clay Carpenter</h6>
-                  <p>As long as the Patriots don't make it, I don't care. So, <strong>yes</strong>.</p>
+                <div class="content">
+                  <h6 class="title">Joey Kirk</h6>
+                  <p class="text">Hmmm ... I want to believe, but <strong>no</strong> they won't make it.</p>
+                </div>
+              </li>
+              <li class="sidebar-question-item">
+                <div class="avatar avatar-md">
+                  <img src="images/article/mugshot-clay-min.jpg" alt="Writer Kurt Cunningham" class="avatar-img" />
+                </div>
+                <div class="content">
+                  <h6 class="title">Clay Carpenter</h6>
+                  <p class="text">As long as the Patriots don't make it, I don't care. So, <strong>yes</strong>.</p>
                 </div>
               </li>
             </ul>
@@ -127,86 +127,96 @@
         </div>
       </aside>
     </main>
-    <section class="page-comments">
-      <div>
+    <section class="container page-comments">
+      <div class="page-comments-container">
         <header>
-          <h4>Comments</h4>
+          <h4 class="title margin-bottom-32">Comments</h4>
         </header>
-        <div class="comments">
-          <article class="comment">
-            <header>
-              <p><b>Sadie Schwartz</b></p>
-              <time>05-24-2019</time>
+        <div class="comments-list">
+          <article class="comment-item">
+            <header class="comment-item-name">
+              <h5 class="title"><b>Sadie Schwartz</b></h5>
+              <time class="date">05-24-2019</time>
             </header>
-            <div>
+            <div class="comment-item-content">
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden.</p>
             </div>
           </article>
-          <article class="comment">
-            <header>
-              <p><b>Nettie Garrett</b></p>
-              <time>05-24-2019</time>
+          <article class="comment-item">
+            <header class="comment-item-name">
+              <h5 class="title"><b>Nettie Garrett</b></h5>
+              <time class="date">05-24-2019</time>
             </header>
-            <div>
+            <div class="comment-item-content">
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden.</p>
             </div>
           </article>
-          <article class="comment">
-            <header>
-              <p><b>Loretta McKenzie</b></p>
-              <time>05-24-2019</time>
+          <article class="comment-item">
+            <header class="comment-item-name">
+              <h5 class="title"><b>Loretta McKenzie</b></h5>
+              <time class="date">05-24-2019</time>
             </header>
-            <div>
+            <div class="comment-item-content">
               <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden.</p>
             </div>
           </article>
         </div>
-        <div class="form-container">
+        <div class="comments-form">
           <form>
-            <div class="form-group">
+            <div class="comments-form-container">
               <div>
-                <label>Name</label>
+                <label class="text-white">Name</label>
                 <input type="text" placeholder="Jonny Smith">
               </div>
               <div>
-                <label>Email Address</label>
+                <label class="text-white">Email Address</label>
                 <input type="text" placeholder="johnnysmith@emai.com">
               </div>
             </div>
             <div>
-              <label>Comment</label>
+              <label class="text-white">Comment</label>
               <textarea></textarea>
             </div>
-            <div class="form-submit-container">
-              <input type="submit" value="Submit">
+            <div class="comments-form-action">
+              <input type="submit" value="Submit" class="button button-primary" />
             </div>
           </form>
         </div>
       </div>
     </section>
     <section class="page-related-content">
-      <div class="page-related-content-container">
-        <ul>
-          <li>
-            <img src="images/article/related-img-1-min.jpg" alt="related artcile image" />
-            <h4>Related Article Title</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
+      <ul class="container list">
+        <li class="item card-post">
+          <a href="#">
+            <div class="card-post-img-container">
+              <img src="images/article/related-img-1-min.jpg" alt="related artcile image" class="img" />
+            </div>
+            <h4 class="title">Related Article Title</h4>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
             <a href="#">Read More</a>
-          </li>
-          <li>
-            <img src="images/article/related-img-2-min.jpg" alt="related artcile image" />
-            <h4>Related Article Title</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
+          </a>
+        </li>
+        <li class="item card-post">
+          <a href="#">
+            <div class="card-post-img-container">
+              <img src="images/article/related-img-2-min.jpg" alt="related artcile image" class="img" />
+            </div>
+            <h4 class="title">Related Article Title</h4>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
             <a href="#">Read More</a>
-          </li>
-          <li>
-            <img src="images/article/related-img-3-min.jpg" alt="related artcile image" />
-            <h4>Related Article Title</h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
+          </a>
+        </li>
+        <li class="item card-post">
+          <a href="#">
+            <div class="card-post-img-container">
+              <img src="images/article/related-img-3-min.jpg" alt="related artcile image" class="img" />
+            </div>
+            <h4 class="title">Related Article Title</h4>
+            <p class="text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu ...</p>
             <a href="#">Read More</a>
-          </li>
-        </ul>
-      </div>
+          </a>
+        </li>
+      </ul>
     </section>
     <footer role="contentinfo">
       <p>Made by Munsters © 2019</p>

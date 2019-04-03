@@ -2,34 +2,27 @@
    Layout Page Styles
    ========================================================================== */
 
-/* Page Content
+/* Page Layout
   ========================================================================== */
 
+/* Wrapper */
 .page-content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
-  max-width: 1440px;
-  padding: 16px 16px 32px;
+  padding: 0 16px;
 }
 
 /* Medium Viewport Breakpoint */
 @media(min-width: 769px) {
   .page-content {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 32px;
-    padding: 32px 0 64px;
+    padding: 0;
   }
 }
 
-
-/* Page Content Article
-  ========================================================================== */
-
+/* Article */
 .page-content .article {
   border-bottom: 1px solid #CDCDCD;
   grid-column: span 4;
-  padding-bottom: 64px;
+  margin: 0 0 64px;
+  padding: 0 0 48px;
 }
 
 /* Medium Viewport Breakpoint */
@@ -37,23 +30,11 @@
   .page-content .article {
     grid-column-start: 2;
     grid-column-end: 8;
+    padding: 0 0 64px;
   }
 }
 
-.page-content .image-container {
-  margin: 64px 0;
-}
-
-.page-content .article img {
-  height: auto;
-  margin-bottom: 16px;
-  width: 100%;
-}
-
-
-/* Page Content Sidebar
-  ========================================================================== */
-
+/* Sidebar */
 .page-content .sidebar {
   display: none;
 }
@@ -67,112 +48,41 @@
   }
 }
 
-.page-content .sidebar .byline-box {
-  margin-bottom: 32px;
+
+/* Page Content Article Image
+  ========================================================================== */
+
+/* Image Container */
+.page-content .article-image-container {
+  margin: 64px 0;
 }
 
-.page-content .sidebar .byline-img-container {
-  text-align: center;
-}
-
-.page-content .sidebar .byline-img-container::after {
-  background-color: #FAFAFA;
-  content: "";
-  display: block;
-  height: 50px;
-  margin-top: -53px;
+.page-content .article-image-container img {
+  height: auto;
+  margin-bottom: 16px;
   width: 100%;
 }
 
-.page-content .sidebar .byline-img-container img {
-  width: 60%;
+
+/* Page Content Article Type Styles
+  ========================================================================== */
+
+/* Subhead */
+.subhead {
+  margin: 32px 0;
 }
 
-.page-content .sidebar .byline-text-container {
-  background-color: #FAFAFA;
-  border-top: 8px solid #FA4616;
-  padding: 16px;
-}
-
-.page-content .sidebar .byline-text-container h5 {
-  color: #2A2A2A;
+/* Image Caption */
+figcaption {
+  border-bottom: 1px solid #CDCDCD;
   font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
   line-height: 1.5;
-  margin-bottom: 4px;
+  padding-bottom: 16px;
 }
 
-.page-content .sidebar .byline-text-container p {
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 4px;
-  word-break: break-word;
-}
-
-.page-content .sidebar .selection-box {
-  background-color: #FAFAFA;
-  border-top: 8px solid #FA4616;
-  padding: 16px;
-}
-
-.page-content .sidebar .selection-box h5 {
-  color: #2A2A2A;
+figcaption span {
   display: block;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 18px;
   font-weight: 700;
-  line-height: 1.5;
-  margin-bottom: 8px;
-}
-
-.page-content .sidebar .selection-box p {
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.page-content .sidebar .selection-box li {
-  border-top: 8px solid #FFFFFF;
-  display: grid;
-  grid-template-columns: 48px auto;
-  grid-column-gap: 16px;
-  margin: 16px 0;
-  padding: 16px 0;
-}
-
-.page-content .sidebar .selection-box li:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-.page-content .sidebar .selection-box li .item-img-container {
-  border-radius: 100%;
-  height: 48px;
-  overflow: hidden;
-  width: 48px;
-}
-
-.page-content .sidebar .selection-box li .item-img-container img {
-  width: 100%;
-}
-
-.page-content .sidebar .selection-box .item-text-container h6 {
-  color: #2A2A2A;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 2px;
-}
-
-.page-content .sidebar .selection-box .item-text-container p {
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 0;
+  margin-bottom: 4px;
 }

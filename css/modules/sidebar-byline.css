@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Sidebar Byline Module Styles
+   ========================================================================== */
+
+ /* Structure
+   ========================================================================== */
+
+.sidebar-byline-container {
+  text-align: center;
+}
+
+.sidebar-byline-container::after {
+  background-color: #FAFAFA;
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -53px;
+  width: 100%;
+}
+
+.sidebar-byline-container img {
+  width: 60%;
+}

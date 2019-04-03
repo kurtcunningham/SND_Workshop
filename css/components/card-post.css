@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Card Post Component Styles
+   ========================================================================== */
+
+/* Structure
+  ========================================================================== */
+
+/* Card Post Type Styles */
+.card-post .title,
+.card-post .text {
+  color: #2A2A2A;
+}
+
+.card-post .title {
+  color: #2A2A2A;
+  margin-bottom: 4px;
+}
+
+.card-post .text {
+  font-weight: 400;
+}
+
+/* Card Post Image */
+.card-post-img-container {
+  height: 275px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card-post .img {
+  border-radius: 3px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}

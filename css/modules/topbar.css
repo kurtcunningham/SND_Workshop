@@ -3,6 +3,7 @@
    ========================================================================== */
 
 .topbar {
+  background-color: #FAFAFA;
   height: 64px;
   overflow: hidden;
   position: relative;
@@ -13,13 +14,13 @@
   display: flex;
 }
 
-.topbar .logo-container {
+.topbar .topbar-left {
   padding: 16px 24px;
   position: relative;
   transform: skewX(-10deg);
 }
 
-.topbar .logo-container::before {
+.topbar .topbar-left::before {
   content: " ";
   height: 100%;
   left: -12px;
@@ -28,29 +29,29 @@
   width: 12px;
 }
 
-.topbar .logo-container,
-.topbar .logo-container::before {
+.topbar .topbar-left,
+.topbar .topbar-left::before {
   background-color: #FFFFFF;
   display: inline-block;
 }
 
-.topbar .logo-container a {
+.topbar .topbar-left .topbar-logo-link {
   display: inline-block;
   transform: skewX(10deg);
 }
 
-.topbar .logo-container img {
+.topbar .topbar-left img {
   height: 100%;
   width: 65px;
 }
 
-.topbar .share-container,
-.topbar .share-container::after {
+.topbar .topbar-right,
+.topbar .topbar-right::after {
   background-color: #FFFFFF;
   display: inline-block;
 }
 
-.topbar .share-container {
+.topbar .topbar-right {
   align-items: center;
   display: flex;
   justify-content: flex-end;
@@ -60,7 +61,7 @@
   transform: skewX(-10deg);
 }
 
-.topbar .share-container::after {
+.topbar .topbar-right::after {
   content: " ";
   height: 100%;
   right: -12px;
@@ -69,11 +70,11 @@
   width: 12px;
 }
 
-.topbar .share-container li {
+.topbar .topbar-right .topbar-social-item {
   display: inline-block;
   transform: skewX(10deg);
 }
 
-.topbar .share-container li:not(:last-child) {
+.topbar .topbar-right .topbar-social-item:not(:last-child) {
   margin-right: 8px;
 }

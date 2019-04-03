@@ -2,61 +2,43 @@
    Article Comments Module Styles
    ========================================================================== */
 
-.page-comments {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
-  max-width: 1440px;
-}
+/* Comments List
+ ========================================================================== */
 
-/* Medium Viewport Breakpoint */
-@media(min-width: 769px) {
-  .page-comments {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 32px;
-  }
-}
-
-.page-comments > div {
+.page-comments-container {
   grid-column: span 4;
   padding: 0 16px;
 }
 
 /* Medium Viewport Breakpoint */
 @media(min-width: 769px) {
-  .page-comments > div {
+  .page-comments-container {
     grid-column-start: 2;
     grid-column-end: 8;
     padding: 0;
   }
 }
 
-.page-comments header h4 {
-  color: #FA4616;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1.5;
-  margin: 0 0 32px;
-}
-
-.page-comments .comments {
+/* List */
+.comments-list {
   margin-bottom: 64px;
 }
 
-.page-comments .comment:not(:last-child) {
+/* Item */
+.comment-item:not(:last-child) {
   border-bottom: 1px solid #CDCDCD;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
+  margin: 0 0 24px;
+  padding: 0 0 8px;
 }
 
-.page-comments .comment header {
+.comment-item-name {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 8px;
 }
 
-.page-comments .comment header p {
+.comment-item-name .title {
+  color: #2A2A2A;
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -64,7 +46,7 @@
   margin-bottom: 0;
 }
 
-.page-comments .comment header time {
+.comment-item-name .date {
   color: #959595;
   font-family: 'Work Sans', Helvetica, sans-serif;
   font-size: 12px;
@@ -73,6 +55,23 @@
   text-align: right;
 }
 
-.page-comments .comment p {
-  margin-bottom: 0;
+
+/* Comments Form
+ ========================================================================== */
+
+.comments-form {
+  background-color: #0B162A;
+  border-radius: 3px;
+  margin-bottom: 64px;
+  padding: 32px 32px 16px;
+}
+
+.comments-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+}
+
+.comments-form-action {
+  text-align: right;
 }

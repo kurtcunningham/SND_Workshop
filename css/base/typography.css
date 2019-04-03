@@ -2,7 +2,8 @@
    Typography Base Styles
    ========================================================================== */
 
-/* Heading Styles */
+ /* Headings
+  ========================================================================== */
 h1,
 h2,
 h3,
@@ -40,7 +41,10 @@ h6 {
   font-size: 14px;
 }
 
-/* Paragraph Styles */
+
+/* Paragraphs
+ ========================================================================== */
+
 p {
   font-family: 'Georgia', Times, serif;
   font-size: 16px;
@@ -48,7 +52,10 @@ p {
   margin-bottom: 16px;
 }
 
-/* Links */
+
+/* Links
+ ========================================================================== */
+
 a {
   color: #FA4616;
   font-family: 'Work Sans', Helvetica, sans-serif;
@@ -57,17 +64,32 @@ a {
   text-decoration: none;
 }
 
-/* Image Caption */
-figcaption {
-  border-bottom: 1px solid #CDCDCD;
-  font-family: 'Work Sans', Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
-  padding-bottom: 16px;
+
+/* Text Colors
+ ========================================================================== */
+
+.text-blue {
+ color: #0B162A;
 }
 
-figcaption span {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 4px;
+.text-orange {
+ color: #FA4616;
+}
+
+.text-white {
+ color: #FFFFFF;
+}
+
+
+/* Text Alignment
+ ========================================================================== */
+
+/* Text Center */
+.text-center {
+  text-align: center;
+}
+
+/* Text Right */
+.text-right {
+  text-align: right;
 }
