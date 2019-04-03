@@ -4,9 +4,12 @@
 
 .page-related-content {
   background-color: #FAFAFA;
+  padding: 64px 16px;
+}
+
+.page-related-content-container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 64px 16px;
 }
 
 .page-related-content ul {
