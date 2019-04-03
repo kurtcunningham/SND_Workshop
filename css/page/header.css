@@ -42,7 +42,16 @@
   background-color: var(--brand-blue-base);
   display: inline-block;
   margin-bottom: var(--spacer-24);
+  position: relative;
+  opacity: 0;
   padding: var(--spacer-8);
+  right: var(--spacer-64);
+  transition: opacity 1.25s ease-in, right 0.75s ease, transform 1.25s ease;
+}
+
+.page-header .content-container .label.is-visible {
+  opacity: 1;
+  right: var(--spacer-0);
   transform: skewX(-10deg);
 }
 
@@ -55,43 +64,92 @@
   transform: skewX(10deg);
 }
 
-.page-header .content-container h1 {
+.page-header .content-container .title {
   color: var(--brand-orange-base);
   font-size: 80px;
   line-height: 65px;
   margin-bottom: var(--spacer-24);
+  position: relative;
+  opacity: 0;
+  right: var(--spacer-64);
   text-transform: uppercase;
+  transition: opacity 1.25s ease-in, right 0.75s ease;
+}
+
+.page-header .content-container .title.is-visible {
+  opacity: 1;
+  right: var(--spacer-0);
 }
 
 /* Medium Viewport Breakpoint */
 @media screen and (min-width: 768px) {
-  .page-header .content-container h1 {
+  .page-header .content-container .title {
     font-size: 150px;
     line-height: 110px;
   }
 }
 
-.page-header .content-container p {
+.page-header .content-container .text {
   font-family: var(--font-family-serif);
   font-size: var(--font-size-delta);
+  opacity: 0;
+  position: relative;
+  right: var(--spacer-64);
+  transition: opacity 1.25s ease-in, right 0.75s ease;
+}
+
+.page-header .content-container .text.is-visible {
+  opacity: 1;
+  right: var(--spacer-0);
 }
 
 .page-header .image-container {
-  background: url('../../images/article/hero-img-min.jpg') no-repeat 0 64px;
-  background-size: cover;
   display: none;
-  grid-column-start: 8;
-  grid-column-end: 12;
-  height: 100%;
-  left: -64px;
+  grid-column-start: 7;
+  grid-column-end: 13;
+  height: 650px;
   position: relative;
-  width: 850px;
   z-index: -1;
 }
 
 /* Medium Viewport Breakpoint */
 @media screen and (min-width: 768px) {
   .page-header .image-container  {
-    display: block;
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: repeat(8, 1fr);
+    width: 130%;
   }
+}
+
+.page-header .image-container li {
+  grid-column: span 2;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  position: relative;
+  transform: skewX(-10deg);
+  transition: opacity 1.5s ease-in;
+  width: 100%;
+}
+
+.page-header .image-container li.is-visible {
+  opacity: 1;
+}
+
+.page-header .image-container li:nth-child(2) {
+  left: -24px;
+  top: 128px;
+}
+
+.page-header .image-container li:last-child {
+  left: -24px;
+  top: 128px;
+}
+
+.page-header .image-container li img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+
 }
