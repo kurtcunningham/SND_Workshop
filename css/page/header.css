@@ -123,6 +123,7 @@
 }
 
 .page-header .image-container li {
+  background-color: var(--brand-orange-base);
   grid-column: span 2;
   height: 100%;
   overflow: hidden;
@@ -130,6 +131,19 @@
   position: relative;
   transform: skewX(-10deg);
   transition: opacity 1.5s ease-in;
+  width: 100%;
+}
+
+.page-header .image-container li::before {
+  background-color: var(--brand-blue-base);
+  bottom: 0;
+  content: "";
+  left: 0;
+  height: 100%;
+  mix-blend-mode: screen;
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 100%;
 }
 
@@ -149,6 +163,7 @@
 
 .page-header .image-container li img {
   height: 100%;
+  mix-blend-mode: hard-light;
   object-fit: cover;
   width: 100%;
 
