@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Related Posts Module Styles
+   ========================================================================== */
+
+/* Base
+ ========================================================================== */
+
+.page-related-content {
+  background-color: var(--structure-gray-light);
+  padding: var(--spacer-64) var(--spacer-16);
+}
+
+.page-related-content .item {
+   grid-column: span 4;
+}
+
+.page-related-content .item:not(:last-child) {
+   margin-bottom: var(--spacer-32);
+}
+
+@media screen and (min-width: 768px) {
+  .page-related-content .item:not(:last-child) {
+    margin-bottom: var(--spacer-0);
+  }
+}

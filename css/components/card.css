@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Card Component Styles
+   ========================================================================== */
+
+/* Structure
+  ========================================================================== */
+.card {
+  background-color: var(--card-bg);
+  border-top: var(--card-border);
+  margin-bottom: var(--card-margin);
+  padding: var(--card-padding);
+}
+
+
+/* Type Styles
+   ========================================================================== */
+.card-title {
+  color: var(--type-black-base);
+  display: block;
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--font-size-echo);
+  font-weight: var(--font-weight-black);
+  margin-bottom: var(--spacer-8);
+}
+
+.card-text,
+.card-text-small {
+  font-family: var(--font-family-sans-serif);
+  font-size: var(--font-size-foxtrot);
+  font-weight: var(--font-weight-regular);
+}
+
+.card-text-small {
+  font-size: var(--font-size-hotel);
+  margin-bottom: var(--spacer-4);
+}

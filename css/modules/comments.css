@@ -1,0 +1,78 @@
+/* ==========================================================================
+   Article Comments Module Styles
+   ========================================================================== */
+
+/* Comments List
+ ========================================================================== */
+
+.page-comments-container {
+  grid-column: span 4;
+  padding: 0 16px;
+}
+
+/* Medium Viewport Breakpoint */
+@media screen and (min-width: 768px) {
+  .page-comments-container {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    padding: 0;
+  }
+}
+
+/* List */
+.comments-list {
+  margin-bottom: var(--spacer-64);
+}
+
+/* Item */
+.comment-item:not(:last-child) {
+  border-bottom: var(--border-primary);
+  margin: var(--spacer-0) var(--spacer-0) var(--spacer-24);
+  padding: var(--spacer-0) var(--spacer-0) var(--spacer-8);
+}
+
+.comment-item-name {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: var(--spacer-8);
+}
+
+.comment-item-name .title,
+.comment-item-name .date {
+  font-family: var(--font-family-sans-serif);
+}
+
+.comment-item-name .title {
+  color: var(--type-black-base);
+  font-size: var(--font-size-foxtrot);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacer-0);
+}
+
+.comment-item-name .date {
+  color: var(--type-gray-base);
+  font-size: var(--font-size-hotel);
+  font-weight: var(--font-weight-regular);
+  text-align: var(--text-align-right);
+}
+
+
+/* Comments Form
+ ========================================================================== */
+
+.comments-form {
+  background-color: var(--brand-blue-base);
+  border-radius: var(--border-radius-3);
+  margin-bottom: var(--spacer-64);
+  padding: var(--spacer-32) var(--spacer-32) var(--spacer-16);
+}
+
+.comments-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 32px;
+}
+
+.comments-form-action {
+  text-align: var(--text-align-right);
+}

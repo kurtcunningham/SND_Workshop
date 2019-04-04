@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Avatar Component Styles
+   ========================================================================== */
+
+ /* Structure
+   ========================================================================== */
+
+.avatar {
+  border-radius: var(--border-radius-fl);
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+}
+
+
+/* Sizes
+  ========================================================================== */
+.avatar-sm {
+  height: var(--avatar-sm);
+  width: var(--avatar-sm);
+}
+
+.avatar-md {
+  height: var(--avatar-md);
+  width: var(--avatar-md);
+}
+
+.avatar-lg {
+  height: var(--avatar-lg);
+  width: var(--avatar-lg);
+}
