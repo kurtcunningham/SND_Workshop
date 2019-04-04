@@ -26,3 +26,18 @@ Presented by: Kurt Cunningham & Joey Kirk of Made by Munsters
 ---
 
 ## Final Project
+https://kurtcunningham.github.io/SND_Workshop/
+
+---
+
+### Core Focus
+1. Understanding why smaller files are important
+2. How to create object oriented CSS class names
+3. Create a theme file for CSS Custom Properties - Variables
+4. Bringing our story to life with simple transitions
+
+---
+
+### Concepts To Explore
+1. Creating a more fluid CSS Grid
+2. Add `mix-blend-mode` to update our image colors based theme file
