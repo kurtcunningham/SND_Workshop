@@ -3,9 +3,9 @@ Make HTML & CSS an asset. Not liability.
 
 ---
 
-Presented on: April 4, 2019
-Presented at: SND Chicago 2019
-Presented by: Kurt Cunningham & Joey Kirk of Made by Munsters
+- Presented on: April 4, 2019
+- Presented at: SND Chicago 2019
+- Presented by: Kurt Cunningham & Joey Kirk of Made by Munsters
 
 ---
 
