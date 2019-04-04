@@ -26,7 +26,8 @@ Presented by: Kurt Cunningham & Joey Kirk of Made by Munsters
 ---
 
 ## Final Project
-https://kurtcunningham.github.io/SND_Workshop/
+Website: https://kurtcunningham.github.io/SND_Workshop/
+Slides: https://drive.google.com/open?id=1mzMoiOANgql7k-_PaSLR8QmgH8VmqsBY
 
 ---
 
